@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="todos">
+        <form action="/send" method="POST">
+            <input type="email" placeholder="Enter your e-mail" name="email">
+            <button type="submit">Send me</button>
+        </form>
+        <form action="/todo" method="POST">
+            <input type="text" placeholder="Add Todo..." name="todo">
+            <button type="submit">Add</button>
+        </form>
+
+        <div class="list">
+            <% result.forEach((re) => { %>
+                <a href="/delete/<%= re._id %>"><h2><%= re.task %></h2></a>
+            <% }) %>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

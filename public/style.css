@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.todos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.171);
+    padding: 10px;
+    backdrop-filter: blur(5px);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+form input {
+    width: 85%;
+    padding: 10px;
+    background: none;
+    border: none;
+    /* border-bottom: 1px solid gray; */
+    outline: none;
+}
+
+form button {
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    /* border-bottom: 1px solid gray; */
+    border-left: 1px solid gray;
+    background: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form button:hover {
+    background: gray;
+    color: white;
+}
+
+.list {
+    width: 100%;
+}
+
+h2 {
+    margin: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
