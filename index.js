@@ -33,7 +33,7 @@ mongoose.connect('mongodb://localhost/todo_list', { useNewUrlParser: true, useUn
   app.get('/', (req, res) => {
     Task.find({}, (err, result) => {
       if (err) throw err
-      res.render('view', {result: result, pres: ''})
+      res.render('index', {result: result, pres: ''})
     })
   })
 
